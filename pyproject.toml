@@ -1,0 +1,13 @@
+[project]
+name = "orgmind"
+version = "0.1.0"
+description = "Open-source AI productivity platform for whole organizations"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.110", "uvicorn>=0.29", "anthropic>=0.40", "pydantic>=2"]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[tool.setuptools]
+packages = ["orgmind"]

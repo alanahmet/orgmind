@@ -1,0 +1,10 @@
+services:
+  orgmind:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    environment:
+      ORGMIND_DB: /data/orgmind.db
+    volumes: ["orgmind-data:/data"]
+volumes:
+  orgmind-data:
